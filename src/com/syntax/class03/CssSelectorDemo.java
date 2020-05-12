@@ -4,21 +4,22 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class XpathDemo {
+public class CssSelectorDemo {
+	
 	public static String url = "http://166.62.36.207/humanresources/symfony/web/index.php/dashboard";
-
+	
 	public static void main(String[] args) {
+		
 		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
 
 		WebDriver driver = new ChromeDriver();
 		driver.get(url);
-		driver.findElement(By.xpath("//input[@id='txtUsername']")).sendKeys("Admin");
-		driver.findElement(By.xpath("//input[@name='txtPassword']")).sendKeys("Hum@nhrm123");
-		driver.findElement(By.xpath("//input[@value='LOGIN']")).click();
-		driver.findElement(By.xpath("//a[@id='welcome']")).click();
+		
+		driver.findElement(By.cssSelector("input[name*='txtU']")).sendKeys("Admin");
+		driver.findElement(By.cssSelector("input[name*='Password']")).sendKeys("Hum@nhrm123");
+		driver.findElement(By.cssSelector("input[class='button']")).click();
 		
 		
-				
 	}
 
 }
