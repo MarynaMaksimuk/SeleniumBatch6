@@ -1,5 +1,7 @@
 package com.syntax.class02;
 
+import org.openqa.selenium.By;
+
 public class ChromeDriver implements WebDriver{
 	
 	public ChromeDriver() {
@@ -34,6 +36,12 @@ public class ChromeDriver implements WebDriver{
 
 	@Override
 	public Object navigate() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Object findElement(By name) {
 		// TODO Auto-generated method stub
 		return null;
 	}

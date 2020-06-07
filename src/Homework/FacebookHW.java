@@ -41,7 +41,7 @@ public class FacebookHW {
 			driver.findElement(By.className("_8esa")).click();
 			
 		}
-		driver.findElement(By.xpath("//button[@name='websubmit']")).submit();
+		driver.findElement(By.xpath("//button[@name='websubmit']")).click();
 		Thread.sleep(2000);
 		driver.quit();
 	}

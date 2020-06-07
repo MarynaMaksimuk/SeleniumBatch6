@@ -14,7 +14,7 @@ public class HRMtask4 {
 		WebDriver driver=new ChromeDriver();
 		driver.get(url);
 		driver.findElement(By.xpath("//a[@class='dropdown-toggle']")).click();
-		driver.findElement(By.cssSelector("#navbar-brand-centered > ul:nth-child(1) > li.dropdown.open > ul > li:nth-child(3) > a")).click();
+		driver.findElement(By.xpath("//input[@value='Female']")).click();
 		WebElement button= driver.findElement(By.xpath("//input[@type='radio' and @value='Female']"));
 		button.click();
 		boolean selected=button.isSelected();
@@ -34,7 +34,7 @@ public class HRMtask4 {
 			System.out.println("Wrong age button");
 		}Thread.sleep(3000);
 		
-		driver.quit();
+		//driver.quit();
 
 
 	
